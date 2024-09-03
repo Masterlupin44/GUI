@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace GUI
 {
@@ -8,7 +9,8 @@ namespace GUI
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        Texture2D Player;        
+        Texture2D Player;
+        Vector2 playerPos;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -26,7 +28,7 @@ namespace GUI
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            
             // TODO: use this.Content to load your game content here
         }
 
@@ -34,6 +36,7 @@ namespace GUI
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+
             
 
             // TODO: Add your update logic here
