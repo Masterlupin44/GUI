@@ -10,8 +10,10 @@ namespace GUI
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         Texture2D Player;
+        Texture2D background;
         Vector2 playerPos;
         int Frames;
+        
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
