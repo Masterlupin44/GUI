@@ -13,6 +13,7 @@ namespace GUI
         Texture2D background;
         Vector2 playerPos;
         int Frames;
+        // PlayerJump
         
         public Game1()
         {
