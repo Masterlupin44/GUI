@@ -11,6 +11,7 @@ namespace GUI
         private SpriteBatch _spriteBatch;
         Texture2D Player;
         Vector2 playerPos;
+        int Frames;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
