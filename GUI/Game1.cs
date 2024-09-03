@@ -8,7 +8,7 @@ namespace GUI
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-
+        Texture2D Player;        
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -34,6 +34,7 @@ namespace GUI
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+            
 
             // TODO: Add your update logic here
 
